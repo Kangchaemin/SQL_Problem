@@ -11,10 +11,11 @@
 
 > 해설  
 
+```
 SELECT name, population, area  
 FROM world  
 WHERE area >= 3000000 OR population >= 25000000  
-
+```
 
 
 
@@ -28,11 +29,12 @@ WHERE area >= 3000000 OR population >= 25000000
 
 >해설  
 
+<pre>
 SELECT *  
 FROM Cinema  
-<b> WHRER mod(id, 2) != 0 AND description not like 'boring' # description != 'boring'</b>  
+<b>WHRER mod(id, 2) != 0 AND description not like 'boring' # description != 'boring'</b>  
 ORDER BY rating desc  
-
+</pre>
 &nbsp;
 
 
@@ -47,11 +49,12 @@ ORDER BY rating desc
 
 >해설  
 
+<pre>
 SELECT email  
 FROM person  
 GROUP BY email  
-<b> HAING COUNT(id) >= 2 </b> 
-
+<b>HAING COUNT(id) >= 2 </b> 
+</pre>
 
 
 
@@ -65,8 +68,10 @@ GROUP BY email
 
 &nbsp;
 
->해설  
-
+>해설
+  
+<pre>
 SELECT firstName, lastName, city, state  
 FROM Person  
-<b> LEFT JOIN Address ON Person.personId = Address.personId </b>
+<b>LEFT JOIN Address ON Person.personId = Address.personId </b>
+</pre>
